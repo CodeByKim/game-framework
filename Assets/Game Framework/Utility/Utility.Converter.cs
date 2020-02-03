@@ -1,7 +1,21 @@
 ﻿using System;
-public class NewClass
+using System.Text;
+
+namespace GameFramework
 {
-    public NewClass()
+    public static partial class Utility
     {
+        public static class Converter
+        {
+            public static byte[] GetBytes(string value)
+            {
+                return Encoding.UTF8.GetBytes(value);
+            }
+
+            public static string GetString(byte[] value)
+            {
+                return Encoding.UTF8.GetString(value);
+            }
+        }
     }
 }
