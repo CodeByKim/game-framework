@@ -32,11 +32,11 @@ namespace GameFramework
         {
             Type moduleType = typeof(T);
 
-            if(moduleType.FullName.StartsWith("GameFramework."))
+            /*if(moduleType.FullName.StartsWith("GameFramework."))
             {
                 Debug.LogError("Not GameFramework Module");
                 return null;
-            }
+            }*/
             
             return GetModule(typeof(T)) as T;
         }
